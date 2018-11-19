@@ -1,0 +1,23 @@
+{
+  "name": "apricotlace-gen-diff",
+  "version": "1.0.0",
+  "description": "generates the difference between configuration files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApricotLace/project-lvl2-s369.git"
+  },
+  "keywords": [
+    "CLI",
+    "application"
+  ],
+  "author": "apricotlace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ApricotLace/project-lvl2-s369/issues"
+  },
+  "homepage": "https://github.com/ApricotLace/project-lvl2-s369#readme"
+}
