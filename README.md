@@ -1,4 +1,7 @@
 # ➖/➕  Gen-diff
+
+[![Build Status](https://travis-ci.org/ApricotLace/project-lvl2-s369.svg?branch=master)](https://travis-ci.org/ApricotLace/project-lvl2-s369) [![Maintainability](https://api.codeclimate.com/v1/badges/c36101e1ddac9ea0a0ee/maintainability)](https://codeclimate.com/github/ApricotLace/project-lvl2-s369/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/c36101e1ddac9ea0a0ee/test_coverage)](https://codeclimate.com/github/ApricotLace/project-lvl2-s369/test_coverage)
+
 **CLI Application**
 
 App get 2 configuration files as input and display their **differences**.
@@ -24,3 +27,4 @@ $ gendiff -h
     -f, --format [type]  Output format
 ```
     
+[![asciicast](https://asciinema.org/a/gpGeNsInjmI8d4WAtsrvF0mYb.svg)](https://asciinema.org/a/gpGeNsInjmI8d4WAtsrvF0mYb)
