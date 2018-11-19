@@ -4,7 +4,7 @@
 
 **CLI Application**
 
-App get 2 configuration files as input and display their **differences**.
+App get 2 **configuration files** as input and display their **differences**.
 ## Installation:
 >`npm install -g apricotlace-gen-diff`
 
