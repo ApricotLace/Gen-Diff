@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
+import { extname } from 'path';
 import _ from 'lodash';
-
-const convertToObj = path => JSON.parse(readFileSync(path, 'utf8'));
+import parse from './parsers';
 
 const stageActions = [
   {
@@ -60,8 +60,8 @@ const render = (ast) => {
 };
 
 export default (firstFile, secondFile) => {
-  const obj1 = convertToObj(firstFile);
-  const obj2 = convertToObj(secondFile);
+  const obj1 = parse(extname(firstFile), readFileSync(firstFile, 'utf8'));
+  const obj2 = parse(extname(secondFile), readFileSync(secondFile, 'utf8'));
   const buildedAst = buildAst(obj1, obj2);
   return render(buildedAst);
 };
