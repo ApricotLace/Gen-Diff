@@ -26,7 +26,7 @@ const stageActions = [
   }];
 
 const buildAst = (obj1, obj2) => {
-  const keys = Array.from((new Set(Object.keys(obj1).concat(Object.keys(obj2)))));
+  const keys = _.union(Object.keys(obj1), Object.keys(obj2));
   return keys.map((key) => {
     const { stage, process } = stageActions.find(({ check }) => check(obj1, obj2, key));
     return { key, stage, ...process(obj1[key], obj2[key]) };
@@ -36,27 +36,27 @@ const buildAst = (obj1, obj2) => {
 const renderActions = [
   {
     check: node => node.stage === 'unchanged',
-    makeDiffStr: node => `    ${node.key}: ${node.value}\n`,
+    makeDiffStr: node => `    ${node.key}: ${node.value}`,
   },
   {
     check: node => node.stage === 'changed',
-    makeDiffStr: node => `  + ${node.key}: ${node.updValue}\n  - ${node.key}: ${node.oldValue}\n`,
+    makeDiffStr: node => `  + ${node.key}: ${node.updValue}\n  - ${node.key}: ${node.oldValue}`,
   },
   {
     check: node => node.stage === 'removed',
-    makeDiffStr: node => `  - ${node.key}: ${node.value}\n`,
+    makeDiffStr: node => `  - ${node.key}: ${node.value}`,
   },
   {
     check: node => node.stage === 'added',
-    makeDiffStr: node => `  + ${node.key}: ${node.value}\n`,
+    makeDiffStr: node => `  + ${node.key}: ${node.value}`,
   }];
 
 const render = (ast) => {
   const diff = ast.map((node) => {
     const { makeDiffStr } = renderActions.find(({ check }) => check(node));
     return makeDiffStr(node);
-  }).join('');
-  return `{\n${diff}}`;
+  }).join('\n');
+  return `{\n${diff}\n}`;
 };
 
 export default (firstFile, secondFile) => {
