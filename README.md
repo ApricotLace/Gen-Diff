@@ -23,8 +23,8 @@ $ gendiff -h
   Options:
 
     -h, --help           output usage information
-    -V, --version        output the version number Default(object form), Plain, JSON
-    -f, --format [type]  Output format
+    -V, --version        output the version number
+    -f, --format [type]  Output format: Default(object form), Plain, JSON
 ```
     
 [![asciicast](https://asciinema.org/a/OKuIZYVFDIfN86JqH67fN4A7f.svg)](https://asciinema.org/a/OKuIZYVFDIfN86JqH67fN4A7f)
