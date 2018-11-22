@@ -1,6 +1,6 @@
 {
   "name": "apricotlace-gen-diff",
-  "version": "1.4.0",
+  "version": "1.5.5",
   "description": "generates the difference between configuration files",
   "main": "dist/index.js",
   "bin": {
