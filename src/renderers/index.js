@@ -1,8 +1,8 @@
-import renderDefault from './default';
+import renderObjectLike from './objectLike';
 import renderPlain from './plain';
 
 const renderersObj = {
-  default: renderDefault,
+  objectLike: renderObjectLike,
   plain: renderPlain,
   json: ast => JSON.stringify(ast, null, '   '),
 };

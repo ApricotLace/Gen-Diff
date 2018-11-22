@@ -4,7 +4,7 @@ const stageActions = [
   {
     stage: 'nested',
     check: (obj1, obj2, key) => obj1[key] instanceof Object && obj2[key] instanceof Object,
-    process: (prop1, prop2, buildFunction) => ({ childrens: buildFunction(prop1, prop2) }),
+    process: (prop1, prop2, buildFunction) => ({ children: buildFunction(prop1, prop2) }),
   },
   {
     stage: 'unchanged',
