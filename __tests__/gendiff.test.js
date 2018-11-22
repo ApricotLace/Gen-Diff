@@ -40,3 +40,19 @@ describe('Compare nested configs', () => {
       .toBe(expected);
   });
 });
+
+describe('Compare configs in plain format', () => {
+  const expected = readFileSync(getPathToFixture('expectedPlain'), 'utf8');
+  it('#JSON / INI', () => {
+    expect(genDiff(getPathToFixture('nestedBefore.json'), getPathToFixture('nestedAfter.ini'), 'plain'))
+      .toBe(expected);
+  });
+});
+
+describe('Compare configs in JSON format', () => {
+  const expected = readFileSync(getPathToFixture('expectedJSON'), 'utf8');
+  it('#YAML / JSON', () => {
+    expect(genDiff(getPathToFixture('before.yaml'), getPathToFixture('after.json'), 'json'))
+      .toBe(expected);
+  });
+});

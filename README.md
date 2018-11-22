@@ -11,7 +11,7 @@ App get 2 **configuration files** as input and display their **differences**.
 Use lolcat *optionally* 🌈
 
 
-[![asciicast](https://asciinema.org/a/9wPndKqALKJA55w0Egv5WDFKx.svg)](https://asciinema.org/a/9wPndKqALKJA55w0Egv5WDFKx)
+[![asciicast](https://asciinema.org/a/2UEpOE6giZBLWAsDSFkQqbsWD.svg)](https://asciinema.org/a/2UEpOE6giZBLWAsDSFkQqbsWD)
 ## Usage:
 ```
 $ gendiff -h
@@ -23,9 +23,9 @@ $ gendiff -h
   Options:
 
     -h, --help           output usage information
-    -V, --version        output the version number
+    -V, --version        output the version number Default(object form), Plain, JSON
     -f, --format [type]  Output format
 ```
     
-[![asciicast](https://asciinema.org/a/gpGeNsInjmI8d4WAtsrvF0mYb.svg)](https://asciinema.org/a/gpGeNsInjmI8d4WAtsrvF0mYb)
+[![asciicast](https://asciinema.org/a/OKuIZYVFDIfN86JqH67fN4A7f.svg)](https://asciinema.org/a/OKuIZYVFDIfN86JqH67fN4A7f)
 
