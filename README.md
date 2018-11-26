@@ -1,6 +1,6 @@
 # ➖/➕  Gen-diff
 
-[![Build Status](https://travis-ci.org/ApricotLace/project-lvl2-s369.svg?branch=master)](https://travis-ci.org/ApricotLace/project-lvl2-s369) [![Maintainability](https://api.codeclimate.com/v1/badges/c36101e1ddac9ea0a0ee/maintainability)](https://codeclimate.com/github/ApricotLace/project-lvl2-s369/maintainability)
+[![Build Status](https://travis-ci.org/ApricotLace/Gen-Diff.svg?branch=master)](https://travis-ci.org/ApricotLace/Gen-Diff) [![Maintainability](https://api.codeclimate.com/v1/badges/c36101e1ddac9ea0a0ee/maintainability)](https://codeclimate.com/github/ApricotLace/project-lvl2-s369/maintainability)
 
 **CLI Application**
 
